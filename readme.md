@@ -1,37 +1,34 @@
-# 1. Aulão
-
-- [1. Aulão](#1-aulão)
-  - [1.1. Visual Studio Code](#11-visual-studio-code)
-    - [1.1.1. Instalação](#111-instalação)
-    - [1.1.2. Visão Geral](#112-visão-geral)
-      - [1.1.2.1. Explorador de arquivos](#1121-explorador-de-arquivos)
-      - [1.1.2.2. Ferramenta de pesquisa](#1122-ferramenta-de-pesquisa)
-      - [1.1.2.3. Git](#1123-git)
-      - [1.1.2.4. Extensões](#1124-extensões)
-      - [1.1.2.5. Contas](#1125-contas)
-      - [1.1.2.6. Configurações](#1126-configurações)
-    - [1.1.3. Configuração do Python](#113-configuração-do-python)
-      - [1.1.3.1. env](#1131-env)
-      - [1.1.3.2. poetry](#1132-poetry)
-    - [1.1.4. Configuração do R](#114-configuração-do-r)
-      - [1.1.4.1. Renv](#1141-renv)
-    - [1.1.5. Git](#115-git)
-      - [1.1.5.1. Problemas comuns](#1151-problemas-comuns)
-    - [1.1.6. DotEnv](#116-dotenv)
-    - [1.1.7. SSH](#117-ssh)
+- [1.1. Visual Studio Code](#11-visual-studio-code)
+  - [1.1.1. Instalação](#111-instalação)
+  - [1.1.2. Visão Geral](#112-visão-geral)
+  - [1.1.2.1. Explorador de arquivos](#1121-explorador-de-arquivos)
+  - [1.1.2.2. Ferramenta de pesquisa](#1122-ferramenta-de-pesquisa)
+  - [1.1.2.3. Git](#1123-git)
+  - [1.1.2.4. Extensões](#1124-extensões)
+  - [1.1.2.5. Contas](#1125-contas)
+  - [1.1.2.6. Configurações](#1126-configurações)
+  - [1.1.3. Configuração do Python](#113-configuração-do-python)
+  - [1.1.3.1. env](#1131-env)
+  - [1.1.3.2. poetry](#1132-poetry)
+  - [1.1.4. Configuração do R](#114-configuração-do-r)
+  - [1.1.4.1. Renv](#1141-renv)
+  - [1.1.5. Git](#115-git)
+  - [1.1.5.1. Problemas comuns](#1151-problemas-comuns)
+  - [1.1.6. DotEnv](#116-dotenv)
+  - [1.1.7. SSH](#117-ssh)
 - [2. Máquinas Virtuais GCP](#2-máquinas-virtuais-gcp)
-  - [2.1. Criação](#21-criação)
-  - [2.2. Conexão](#22-conexão)
+- [2.1. Criação](#21-criação)
+- [2.2. Conexão](#22-conexão)
 
 
 
-## 1.1. Visual Studio Code
+# 1.1. Visual Studio Code
 
-### 1.1.1. Instalação
+## 1.1.1. Instalação
 
 Para instalar basta entrar no [site](https://code.visualstudio.com/) baixar e instalar.
 
-### 1.1.2. Visão Geral
+## 1.1.2. Visão Geral
 
 <img src="./img/vs_start.JPG" alt="Barra de Ferramentas do VSCode">
 
@@ -51,7 +48,7 @@ Na sequência temos as seguintes ferrametas:
 - Configurações.
 
 
-#### 1.1.2.1. Explorador de arquivos
+## 1.1.2.1. Explorador de arquivos
 
 Nessa primeira aba temos o explorador de arquivos.
 
@@ -71,7 +68,7 @@ Clicando com o botão direito nos espaços sem arquivos temos mais diversas opç
 
 <img src="./img/vs_explorer2.JPG" alt="Click do botão direito no Explorer do VSCode">
 
-#### 1.1.2.2. Ferramenta de pesquisa
+## 1.1.2.2. Ferramenta de pesquisa
 
 Aqui temos uma ferramenta de pesquisa onde também podemos fazer substituições.
 
@@ -84,7 +81,7 @@ Temos as opções:
 3. Utilizar expressão regular.
 
 
-#### 1.1.2.3. Git
+## 1.1.2.3. Git
 
 Primeiramente essa aba não tem utilizada para projetos sem git, por isso ao abrir temos a seguinte tela:
 
@@ -104,7 +101,7 @@ Com o git configurado podemos:
 6. Escrever a mensagem do commit;
 7. Realizar todas as ações necessárias do git.
 
-#### 1.1.2.4. Extensões
+## 1.1.2.4. Extensões
 
 O VScode é altamente configurável aqui existe uma imensidão de extensões, a lista de extensões que eu mais utilizo:
 
@@ -121,11 +118,11 @@ O VScode é altamente configurável aqui existe uma imensidão de extensões, a 
 11. Rainbow Brackets - Para colorir as chaves, colchetes e parenteses.
 
 
-#### 1.1.2.5. Contas
+## 1.1.2.5. Contas
 
 Essa parte é para armazenar suas configurações e extensões utilizadas na nuvem.
 
-#### 1.1.2.6. Configurações
+## 1.1.2.6. Configurações
 
 <img src="./img/vs_config.JPG" alt="Configurações do VSCode">
 
@@ -141,32 +138,32 @@ Como o VSCode é altamente editável, aqui podemos:
 
 
 
-### 1.1.3. Configuração do Python
+## 1.1.3. Configuração do Python
 
-#### 1.1.3.1. env
+## 1.1.3.1. env
 
-#### 1.1.3.2. poetry
-
-
-### 1.1.4. Configuração do R
-
-#### 1.1.4.1. Renv
-
-### 1.1.5. Git
-
-#### 1.1.5.1. Problemas comuns
+## 1.1.3.2. poetry
 
 
+## 1.1.4. Configuração do R
 
-### 1.1.6. DotEnv
+## 1.1.4.1. Renv
+
+## 1.1.5. Git
+
+## 1.1.5.1. Problemas comuns
 
 
-### 1.1.7. SSH
+
+## 1.1.6. DotEnv
+
+
+## 1.1.7. SSH
 
 
 # 2. Máquinas Virtuais GCP
 
-## 2.1. Criação
+# 2.1. Criação
 
 1. Mudar para a região us-east1 
 2. Alterar o disco de inicialização:
@@ -178,7 +175,7 @@ Como o VSCode é altamente editável, aqui podemos:
 3. Expandir "Rede, discos, segurança, gerenciamento, locatário único"
    1. Em interfaces de rede, selecionar redes compartilhadas comigo e selecionar a rede "sb-int-programacao-us-e1-hdg-prd"
 
-## 2.2. Conexão
+# 2.2. Conexão
 
 1. É preciso estar conectado à VPN vpncorp.globo.com
 2. Seguir o [tutorial](https://infra.globoi.com/infra/omnicloud/gcp/acesso_ssh/)
