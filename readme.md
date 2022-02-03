@@ -14,9 +14,9 @@
   - [1.11. Configuração do R](#111-configuração-do-r)
     - [1.11.1. Renv](#1111-renv)
   - [1.12. Git](#112-git)
-  - [1.13. Problemas comuns](#113-problemas-comuns)
-  - [1.14. DotEnv](#114-dotenv)
-  - [1.15. SSH](#115-ssh)
+    - [1.12.1. Problemas comuns](#1121-problemas-comuns)
+  - [1.13. DotEnv](#113-dotenv)
+  - [1.14. SSH](#114-ssh)
 - [2. Máquinas Virtuais GCP](#2-máquinas-virtuais-gcp)
 - [3. Criação](#3-criação)
 - [4. Conexão](#4-conexão)
@@ -273,14 +273,14 @@ Principais arquivos:
       Agora imagina que temos uma pasta chamada `dados` onde todos arquivos não estarão no git pois foram ignorados, como essa pasta não tem nenhum arquivo ela não existirá no git, para que ela exista basta adicionar o arquivo `.gitkeep` dentro da pasta.
 
 
-## 1.13. Problemas comuns
+### 1.12.1. Problemas comuns
 
 
 
-## 1.14. DotEnv
+## 1.13. DotEnv
 
 
-## 1.15. SSH
+## 1.14. SSH
 
 
 # 2. Máquinas Virtuais GCP
