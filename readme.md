@@ -162,7 +162,9 @@ Esses atalhos podem ser modificados, mostrarei com base no arquivo compartilhado
 11. ctrl + shift + tab: Passar para o arquivo anterior aberto ou terminal;
 12. ctrl + l: Limpa o terminal;
 13. ctrl + w: Fecha o arquivo ou terminal selecionado;
-14. alt + ↑ ou alt + ↓: Faz scroll do código.
+14. alt + ↑ ou alt + ↓: Faz scroll do código;
+15. shift + enter: Executa a linha de código no terminal;
+16. ctrl + enter: Executa a linha de código no terminal e pula para próxima linha.
 
 
 
