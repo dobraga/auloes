@@ -1,0 +1,76 @@
+{   
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Pylance",
+    "python.linting.mypyEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.testing.unittestEnabled": false,
+    "terminal.integrated.inheritEnv": true,
+    "python.formatting.provider": "black",
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "macros": {
+        "ExecSelectionAndCursorDownPython": [
+            "python.execSelectionInTerminal",
+            "cursorDown"
+        ],
+        "ClearTerminal": [
+            "workbench.action.terminal.clear",
+            "workbench.action.focusActiveEditorGroup"
+        ]
+    },
+    "workbench.colorTheme": "monokai-charcoal (purple)",
+    "editor.lineHeight": 20,
+    "explorer.decorations.badges": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.rulers": [
+        80
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.colorCustomizations": {
+        "notebook.cellBorderColor": "#AE81FF75",
+        "focusBorder": "#AE81FF"
+    },
+    "python.showStartPage": false,
+    "workbench.panel.defaultLocation": "right",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[R]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": true
+    },
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "jupyter.alwaysTrustNotebooks": true,
+    "cSpell.language": "en,pt_BR",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "markdown-preview-enhanced.previewTheme": "one-dark.css",
+    "todohighlight.include": [
+        "**/*.py"
+    ],
+    "hediet.vscode-drawio.theme": "automatic",
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.suggestSmartCommit": false,
+    "jupyter.askForKernelRestart": false,
+    // Configura R
+    "r.rterm.windows": "C:\\Users\\douglasm\\Documents\\R\\R-4.0.4\\bin\\x64\\R.exe",
+    "r.rterm.linux": "/usr/bin/R",
+    "r.lsp.path": "/usr/bin/R",
+    "r.rterm.option": [
+        "--no-save",
+        "--no-restore",
+        "--r-binary=/usr/bin/R"
+    ],
+    "git.confirmSync": false,
+    "window.zoomLevel": -1
+}
