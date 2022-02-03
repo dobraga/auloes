@@ -259,6 +259,8 @@ Principais comandos:
 Principais arquivos:
 
 1. `.gitignore`: Ignora arquivos do git;
+
+
       Esse arquivo precisa estar na raiz do projeto onde o projeto se encontra, todos arquivos presentes nesse arquivo são ignorados pelo git, ex:
       ```
       *.xlsx
@@ -266,6 +268,8 @@ Principais arquivos:
       env
       ```
 2. `.gitkeep`: Mantém pasta no git mesmo sem arquivos.
+
+
       Agora imagina que temos uma pasta chamada `dados` onde todos arquivos não estarão no git pois foram ignorados, como essa pasta não tem nenhum arquivo ela não existirá no git, para que ela exista basta adicionar o arquivo `.gitkeep` dentro da pasta.
 
 
