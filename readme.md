@@ -207,8 +207,7 @@ source env/bin/activate
 
 Abrindo um arquivo python nesse projeto podemos ver na aba inferior que o vscode identifica o ambiente virtual utilizado:
 
-<img src="./img/v
-s_barra_inferior1.JPG" alt="Configurações do VSCode">
+<img src="./img/vs_barra_inferior1.JPG" alt="Configurações do VSCode">
 
 Agora ao abrirmos o terminal o vscode ativa o ambiente automágicamente e podemos instalar pacotes neste ambiente:
 
