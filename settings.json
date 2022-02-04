@@ -33,27 +33,27 @@
         "notebook.cellBorderColor": "#AE81FF75",
         "focusBorder": "#AE81FF"
     },
-    "python.showStartPage": false,
-    "workbench.panel.defaultLocation": "right",
     "[python]": {
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": true
+        "editor.formatOnPaste": false,
     },
     "[R]": {
         "editor.formatOnSave": false,
-        "editor.formatOnPaste": true
+        "editor.formatOnPaste": true,
     },
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 18,
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
-    "jupyter.alwaysTrustNotebooks": true,
+    "files.associations": {
+        "*.CSV": "csv (semicolon)",
+        "*.rmd": "markdown"
+    },
     "cSpell.language": "en,pt_BR",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "markdown-preview-enhanced.previewTheme": "one-dark.css",
     "todohighlight.include": [
         "**/*.py"
     ],
@@ -65,7 +65,6 @@
     // Configura R
     "r.rterm.windows": "C:\\Users\\douglasm\\Documents\\R\\R-4.0.4\\bin\\x64\\R.exe",
     "r.rterm.linux": "/usr/bin/R",
-    "r.lsp.path": "/usr/bin/R",
     "r.rterm.option": [
         "--no-save",
         "--no-restore",
