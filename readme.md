@@ -14,9 +14,10 @@
   - [1.11. Configuração do R](#111-configuração-do-r)
     - [1.11.1. Renv](#1111-renv)
   - [1.12. Git](#112-git)
-    - [1.12.1. Problemas comuns](#1121-problemas-comuns)
+    - [1.12.1. SSH](#1121-ssh)
   - [1.13. DotEnv](#113-dotenv)
-  - [1.14. SSH](#114-ssh)
+    - [1.13.1. R](#1131-r)
+    - [1.13.2. Python](#1132-python)
 - [2. Máquinas Virtuais GCP](#2-máquinas-virtuais-gcp)
 - [3. Criação](#3-criação)
 - [4. Conexão](#4-conexão)
@@ -239,7 +240,38 @@ Principais comandos:
 
 ## 1.11. Configuração do R
 
+A configuração do R segue o mesmo esquema do python, basta instalar as extensões citadas. 
+
 ### 1.11.1. Renv
+
+Para utilização de ambiente virtual basta seguir os seguintes passos:
+
+1. Instalação do Renv
+``` R
+install.packages("renv")
+```
+
+2. Dentro da pasta do projeto
+``` R
+renv::init()
+```
+
+3. Instalação|Remoção de pacotes
+``` R
+install.packages("dplyr")
+remove.packages("dplyr")
+```
+
+4. Fazendo o "freeze" dos pacotes instalados:
+``` R
+renv::snapshot()
+```
+
+5. Instalando pacotes do projeto
+``` R
+renv::restore()
+```
+
 
 ## 1.12. Git
 
@@ -275,14 +307,79 @@ Principais arquivos:
       Agora imagina que temos uma pasta chamada `dados` onde todos arquivos não estarão no git pois foram ignorados, como essa pasta não tem nenhum arquivo ela não existirá no git, para que ela exista basta adicionar o arquivo `.gitkeep` dentro da pasta.
 
 
-### 1.12.1. Problemas comuns
+### 1.12.1. SSH
 
+[Usando o protocolo SSH, você pode se conectar a servidores e serviços remotos e se autenticar neles. Com chaves SSH, você pode conectar-se a GitHub sem inserir seu nome de usuário e token de acesso pessoal em cada visita.](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/about-ssh)
+
+
+1. Gerar uma chave SSH:
+```sh
+ssh-keygen -t rsa
+```
+
+2. Copiar chave publica:
+
+Windows:
+```sh
+type %HOMEPATH%\.ssh\id_rsa.pub
+```
+
+Linux:
+```sh
+cat ~/.ssh/id_rsa.pub
+```
+
+3. Ao copiar a chave publica [seguir o passo-a-passo a partir do passo **2**](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/.adding-a-new-ssh-key-to-your-github-account)
+
+
+Após feito isso, nossa máquina está conectada ao github.
 
 
 ## 1.13. DotEnv
 
+Para armazenamento de senhas e chaves é recomendável utilizar o arquivo `.env`, esse formato segue o padrão
 
-## 1.14. SSH
+```
+USUARIO1=user1
+SENHA1=iksdngige945892745
+```
+
+### 1.13.1. R
+
+1. Instalação
+```
+install.packages("dotenv")
+```
+
+2. Utilização
+``` R
+dotenv::load_dot_env()
+
+print(Sys.getenv("USUARIO1"))
+print(Sys.getenv("SENHA1"))
+```
+
+
+### 1.13.2. Python
+
+1. Instalação
+```
+pip install python-dotenv | poetry add python-dotenv
+```
+
+2. Utilização
+``` python
+from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv()
+
+print(getenv("USUARIO1"), getenv("SENHA1"))
+```
+
+Para o python, caso queira se aprofundar pode utilizar o [dynaconf](https://www.dynaconf.com/).
+
+
 
 
 # 2. Máquinas Virtuais GCP
