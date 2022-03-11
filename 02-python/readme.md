@@ -1,19 +1,17 @@
-- [1. Configuração do Python](#1-configuração-do-python)
-  - [1.1. env](#11-env)
-  - [1.2. poetry](#12-poetry)
-- [2. DotEnv](#2-dotenv)
-  - [2.1. Python](#21-python)
+- [1. Ambiente Virtual](#1-ambiente-virtual)
+  - [1.1. venv](#11-venv)
+- [2. poetry](#2-poetry)
+- [3. DotEnv](#3-dotenv)
+  - [3.1. Utilização no python](#31-utilização-no-python)
 
-## 1. Configuração do Python
-
-Para utilização do python no VSCode não é necessária configurações adicionais, é necessário instalar apenas as extensões comentadas anteriormente.
-
-### 1.1. env
+# 1. Ambiente Virtual
 
 É de extrema importância termos todo nosso ambiente de desenvolvimento separado em ambientes virtuais para:
 
 1. Gestão de dependências do projeto;
 2. Evitar conflitos de pacotes.
+
+## 1.1. venv
 
 O próprio python trás um pacote para criação de ambientes virtuais chamado venv.
 
@@ -59,7 +57,7 @@ pip freeze > requirements.txt
 ```
 
 
-### 1.2. poetry
+# 2. poetry
 
 O venv já resolve muito dos problemas relacionados à ambientes virtuais, o poetry trás algumas melhorias e facilidades.
 
@@ -74,7 +72,9 @@ Principais comandos:
 5. `poetry export -o requirements.txt`: Exporta dependências;
 
 
-## 2. DotEnv
+Ver o [vídeo](https://www.youtube.com/watch?v=naGF7EIUFp0&ab_channel=EduardoMendes) caso queira se aprofundar no tema.
+
+# 3. DotEnv
 
 Para armazenamento de senhas e chaves é recomendável utilizar o arquivo `.env`, esse formato segue o padrão
 
@@ -83,9 +83,7 @@ USUARIO1=user1
 SENHA1=iksdngige945892745
 ```
 
-
-
-### 2.1. Python
+## 3.1. Utilização no python
 
 1. Instalação
 ```
@@ -102,4 +100,4 @@ load_dotenv()
 print(getenv("USUARIO1"), getenv("SENHA1"))
 ```
 
-Para o python, caso queira se aprofundar pode utilizar o [dynaconf](https://www.dynaconf.com/).
+Caso queira se aprofundar pode utilizar o [dynaconf](https://www.dynaconf.com/).

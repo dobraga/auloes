@@ -1,11 +1,5 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.languageServer": "Pylance",
-    "python.linting.mypyEnabled": true,
-    "python.linting.flake8Enabled": false,
-    "python.testing.unittestEnabled": false,
-    "terminal.integrated.inheritEnv": true,
     "python.formatting.provider": "black",
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
@@ -20,9 +14,6 @@
         ]
     },
     "workbench.colorTheme": "monokai-charcoal (purple)",
-    "editor.lineHeight": 20,
-    "explorer.decorations.badges": false,
-    "terminal.integrated.defaultProfile.linux": "zsh",
     "editor.rulers": [
         80
     ],
@@ -35,44 +26,17 @@
     },
     "[python]": {
         "editor.formatOnSave": true,
-        "editor.formatOnPaste": false,
+        "editor.formatOnPaste": true
     },
-    "[R]": {
-        "editor.formatOnSave": false,
-        "editor.formatOnPaste": true,
-    },
-    "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 18,
+    "editor.fontFamily": "DroidSansMono Nerd Font",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
-    "files.associations": {
-        "*.CSV": "csv (semicolon)",
-        "*.rmd": "markdown"
-    },
     "cSpell.language": "en,pt_BR",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "todohighlight.include": [
-        "**/*.py"
-    ],
-    "hediet.vscode-drawio.theme": "automatic",
-    "git.autofetch": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "git.suggestSmartCommit": false,
     "jupyter.askForKernelRestart": false,
-    // Configura R
-    "r.rterm.windows": "C:\\Users\\douglasm\\Documents\\R\\R-4.0.4\\bin\\x64\\R.exe",
-    "r.rterm.linux": "/usr/bin/R",
-    "r.rterm.option": [
-        "--no-save",
-        "--no-restore",
-        "--r-binary=/usr/bin/R"
-    ],
-    "git.confirmSync": false,
-    "workbench.experimental.layoutControl.enabled": true,
-    "window.zoomLevel": -1,
-    "editor.cursorSurroundingLines": 9999,
     "window.titleBarStyle": "custom"
 }
