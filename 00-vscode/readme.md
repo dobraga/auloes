@@ -18,9 +18,6 @@
   - [1.13. DotEnv](#113-dotenv)
     - [1.13.1. R](#1131-r)
     - [1.13.2. Python](#1132-python)
-- [2. Máquinas Virtuais GCP](#2-máquinas-virtuais-gcp)
-- [3. Criação](#3-criação)
-- [4. Conexão](#4-conexão)
 
 
 
@@ -385,26 +382,3 @@ print(getenv("USUARIO1"), getenv("SENHA1"))
 ```
 
 Para o python, caso queira se aprofundar pode utilizar o [dynaconf](https://www.dynaconf.com/).
-
-
-
-
-# 2. Máquinas Virtuais GCP
-
-# 3. Criação
-
-1. Mudar para a região us-east1 
-2. Alterar o disco de inicialização:
-   1. Imagens personalizadas
-   2. Selecionar um projeto
-   3. gglobo-infraessentials-hub
-   4. Selecionar a imagem oracle para ambiente linux ou windows
-   5. Selecionar o tipo de disco que será utilizado
-3. Expandir "Rede, discos, segurança, gerenciamento, locatário único"
-   1. Em interfaces de rede, selecionar redes compartilhadas comigo e selecionar a rede "sb-int-programacao-us-e1-hdg-prd"
-
-# 4. Conexão
-
-1. É preciso estar conectado à VPN vpncorp.globo.com
-2. Seguir o [tutorial](https://infra.globoi.com/infra/omnicloud/gcp/acesso_ssh/)
-3. Exemplo: `ssh douglas_braga_g_globo@10.88.10.6 -i C:\\Users\\douglasm\\.ssh\\google_compute_engine`
