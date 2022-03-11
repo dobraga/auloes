@@ -1,4 +1,4 @@
-{   
+{
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.languageServer": "Pylance",
@@ -71,5 +71,8 @@
         "--r-binary=/usr/bin/R"
     ],
     "git.confirmSync": false,
-    "window.zoomLevel": -1
+    "workbench.experimental.layoutControl.enabled": true,
+    "window.zoomLevel": -1,
+    "editor.cursorSurroundingLines": 9999,
+    "window.titleBarStyle": "custom"
 }
