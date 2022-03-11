@@ -278,6 +278,13 @@ renv::restore()
 
 [O Git é um sistema de controle de revisão distribuído, rápido, escalável e com um conjunto de comandos incomumente rico que oferece operações de alto nível e acesso completo aos seus recursos.](https://git-scm.com/docs/git/pt_BR)
 
+Para configurar o git:
+
+1. [Instalar](https://git-scm.com/downloads)
+2. Executar:  
+  git config --global user.name "Fulano de Tal"  
+  git config --global user.email "fulanodetal@exemplo.br"
+
 <img src="./img/git.png" alt="Configurações do VSCode">
 
 Principais comandos:
