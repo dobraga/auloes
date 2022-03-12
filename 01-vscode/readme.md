@@ -1,23 +1,20 @@
-- [1. Visual Studio Code](#1-visual-studio-code)
-  - [1.1. Instalação](#11-instalação)
-  - [1.2. Visão Geral](#12-visão-geral)
-  - [1.3. Explorador de arquivos](#13-explorador-de-arquivos)
-  - [1.4. Ferramenta de pesquisa](#14-ferramenta-de-pesquisa)
-  - [1.5. Git](#15-git)
-  - [1.6. Extensões](#16-extensões)
-  - [1.7. Contas](#17-contas)
-  - [1.8. Configurações](#18-configurações)
-  - [1.9. Principais atalhos](#19-principais-atalhos)
+- [1.1. Instalação](#11-instalação)
+- [1.2. Visão Geral](#12-visão-geral)
+- [1.3. Explorador de arquivos](#13-explorador-de-arquivos)
+- [1.4. Ferramenta de pesquisa](#14-ferramenta-de-pesquisa)
+- [1.5. Git](#15-git)
+- [1.6. Extensões](#16-extensões)
+- [1.7. Contas](#17-contas)
+- [1.8. Configurações](#18-configurações)
+- [1.9. Principais atalhos](#19-principais-atalhos)
 
 
 
-# 1. Visual Studio Code
-
-## 1.1. Instalação
+# 1.1. Instalação
 
 Para instalar basta entrar no [site](https://code.visualstudio.com/) baixar e instalar.
 
-## 1.2. Visão Geral
+# 1.2. Visão Geral
 
 <img src="./img/vs_start.JPG" alt="Barra de Ferramentas do VSCode">
 
@@ -37,7 +34,7 @@ Na sequência temos as seguintes ferrametas:
 - Configurações.
 
 
-## 1.3. Explorador de arquivos
+# 1.3. Explorador de arquivos
 
 Nessa primeira aba temos o explorador de arquivos.
 
@@ -57,7 +54,7 @@ Clicando com o botão direito nos espaços sem arquivos temos mais diversas opç
 
 <img src="./img/vs_explorer2.JPG" alt="Click do botão direito no Explorer do VSCode">
 
-## 1.4. Ferramenta de pesquisa
+# 1.4. Ferramenta de pesquisa
 
 Aqui temos uma ferramenta de pesquisa onde também podemos fazer substituições.
 
@@ -70,7 +67,7 @@ Temos as opções:
 3. Utilizar expressão regular.
 
 
-## 1.5. Git
+# 1.5. Git
 
 Primeiramente essa aba não tem utilizada para projetos sem git, por isso ao abrir temos a seguinte tela:
 
@@ -90,7 +87,7 @@ Com o git configurado podemos:
 6. Escrever a mensagem do commit;
 7. Realizar todas as ações necessárias do git.
 
-## 1.6. Extensões
+# 1.6. Extensões
 
 O VScode é altamente configurável aqui existe uma imensidão de extensões, a lista de extensões que eu mais utilizo:
 
@@ -108,11 +105,11 @@ O VScode é altamente configurável aqui existe uma imensidão de extensões, a 
 12. geddski.macros - Para macros no vscode.
 
 
-## 1.7. Contas
+# 1.7. Contas
 
 Essa parte é para armazenar suas configurações e extensões utilizadas na nuvem.
 
-## 1.8. Configurações
+# 1.8. Configurações
 
 <img src="./img/vs_config.JPG" alt="Configurações do VSCode">
 
@@ -132,7 +129,7 @@ Para copiar minhas configurações basta copiar os arquivos:
 2. settings.json: Para configurações gerais.
 
 
-## 1.9. Principais atalhos
+# 1.9. Principais atalhos
 
 Esses atalhos podem ser modificados, mostrarei com base no arquivo compartilhado nesse repositório.
 
