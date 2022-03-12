@@ -10,25 +10,6 @@
         "command": "macros.ExecSelectionAndCursorDownPython",
         "when": "editorTextFocus && editorLangId == 'python' && !notebookEditorFocused"
     },
-    // Atalhos do R
-    {
-        "key": "alt+-",
-        "command": "type",
-        "args": {
-            "text": " <- "
-        }
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "type",
-        "args": {
-            "text": " %>%"
-        }
-    },
-    {
-        "key": "ctrl+shift+[Quote]",
-        "command": "workbench.action.terminal.new"
-    },
     // Alterar foco entre o terminal e o código
     {
         "key": "ctrl+;",
