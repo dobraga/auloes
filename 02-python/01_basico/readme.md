@@ -398,28 +398,104 @@ else:
 
 - Tuplas
 
-Vimos que listas são mutáveis, as tuplas são imutáveis, ou seja, depois de criadas não podem ser alteradas.
+    Vimos que listas são mutáveis, as tuplas são imutáveis, ou seja, depois de criadas não podem ser alteradas.
 
-Outra recomendação é que a lista seja utiliza para objetos homogêneos, ou seja, todos elementos do mesmo tipo e sobre o mesmo assunto, como vimos anteriormente, uma lista de frutas.
+    Outra recomendação é que a lista seja utiliza para objetos homogêneos, ou seja, todos elementos do mesmo tipo e sobre o mesmo assunto, como vimos anteriormente, uma lista de frutas.
 
-Exemplo de tupla, onde temos Nome e Idade:
+    Exemplo de tupla, onde temos Nome e Idade:
 
-```python
-[("Ana", 20), ("Jorge", 35), ("Jubileu", 15)]
-```
+    ```python
+    [("Ana", 20), ("Jorge", 35), ("Jubileu", 15)]
+    ```
 
 - Sets
 
-Sets são sempre ordenadas e deduplicadas:
+    Sets são sempre ordenadas e deduplicadas:
 
-```python
-frutas = {"laranja", "maçã", "pera", "banana", "banana", "maçã"}
-print(frutas) # {'banana', 'pera', 'maçã', 'laranja'}
-print(len(frutas)) # 4
-```
+    ```python
+    frutas = {"laranja", "maçã", "pera", "banana", "banana", "maçã"}
+    print(frutas) # {'banana', 'pera', 'maçã', 'laranja'}
+    print(len(frutas)) # 4
+    ```
 
 
 - Dicionários
+
+    O dicionario é uma estrutura chave valor, onde cada chave precisa ser única.
+
+    Algumas formas de criar um dicionário:
+
+    ```python
+    d = {
+        "Ana": 10,
+        "José": 20,
+        "Laura": 35
+    }
+
+    d = dict(
+        Ana = 10,
+        José = 20,
+        Laura = 35
+    )
+
+    d = dict(
+        [
+            ("Ana", 10),
+            ("José", 20),
+            ("Laura", 30)
+        ]
+    )
+
+    ```
+
+    - Tamanho
+    ```python
+    print(len(d)) # 3
+    ```
+
+    - Seleção
+    ```python
+    print(d["Ana"]) # 10
+    ```
+
+    - Modificação
+    ```python
+    d["Ana"] = 30
+    print(d["Ana"]) # 30
+    ```
+
+    - Remoção
+    ```python
+    del d["Ana"]
+    ```
+
+    ```python
+    print(d["Ana"])
+
+    # Traceback (most recent call last):
+    # File "<pyshell#8>", line 1, in <module>
+    #     d['Ana']
+    # KeyError: 'Ana'
+    ```
+
+    OBS: Podemos usar o get para não dar erro
+
+    ```python
+    d.get("Ana") # None
+    d.get("Ana", -1) # -1
+    ```
+
+    - Criação
+    ```python
+    d["Ana"] = 50
+    print(d["Ana"]) # 50
+    ```
+
+    - Chave e valor:
+    ```python
+    print(d.keys()) # dict_keys(['Ana', 'José', 'Laura'])
+    print(d.values()) # dict_values([50, 20, 30])
+    ```
 
 
 ## 9. Loops
