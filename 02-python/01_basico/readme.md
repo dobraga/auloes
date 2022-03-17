@@ -94,9 +94,9 @@ Como comentado anteriormente, o python possui uma escrita fácil, a sintaxe bás
     idade = int(input("Quantos anos você tem?"))
     ```
 
-- Edentação
+- Indentação
 
-    O python utiliza a edentação e `:` para identificação do bloco de código, como por exemplo, condições, loops e entre outros
+    O python utiliza a indentação e `:` para identificação do bloco de código, como por exemplo, condições, loops e entre outros
 
     ```python
     entrada = int(input("Digite quantos anos você tem:"))
