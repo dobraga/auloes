@@ -1,13 +1,18 @@
 [
-    // Abrir e fechar aba lateral
+    // Abrir e fechar terminal
     {
         "key": "ctrl+[Quote]",
-        "command": "workbench.action.toggleAuxiliaryBar"
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     // Executar linha no terminal e pular para proxima linha
     {
         "key": "ctrl+enter",
         "command": "macros.ExecSelectionAndCursorDownPython",
+        "when": "editorTextFocus && editorLangId == 'python' && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "python.execSelectionInTerminal",
         "when": "editorTextFocus && editorLangId == 'python' && !notebookEditorFocused"
     },
     // Alterar foco entre o terminal e o código
@@ -42,7 +47,7 @@
         "command": "workbench.action.terminal.clear",
         "when": "terminalFocus"
     },
-    // Limpa Navegação por pagedown e pageup
+    // Limpa Navegação por pagedown e pageup entre arquivos
     {
         "key": "ctrl+pageup",
         "command": "-workbench.action.previousEditor"
@@ -61,7 +66,7 @@
         "command": "-selectNextPageSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-    // Navegar entre arquivos abertos
+    // Navegar entre arquivos abertos com ctrl tab
     {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor",
@@ -82,7 +87,7 @@
         "command": "selectNextPageSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-    // Navegar entre terminais abertos
+    // Navegar entre terminais abertos com ctrl tab
     {
         "key": "ctrl+tab",
         "command": "workbench.action.terminal.focusNext",
@@ -92,5 +97,5 @@
         "key": "ctrl+shift+tab",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
-    }
+    },
 ]
