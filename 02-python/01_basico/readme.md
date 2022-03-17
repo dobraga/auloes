@@ -80,13 +80,19 @@ Como comentado anteriormente, o python possui uma escrita fácil, a sintaxe bás
     print("Olá mundo")
     ```
 
-    - Entrada
+- Entrada
 
     ```python
     var = input("Essa mensagem aparecerá no terminal para o usuário")
     ```
 
     OBS: O input do python sempre retorna uma string.
+
+    Podemos transformar em inteiro, fazendo:
+
+    ```python
+    idade = int(input("Quantos anos você tem?"))
+    ```
 
 - Edentação
 
@@ -192,7 +198,6 @@ Temos também:
 - Divisão inteira
 
 ```python
-10 / 3  # 3.333333333333
 10 // 3 # 3
 ```
 
