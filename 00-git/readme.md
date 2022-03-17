@@ -28,12 +28,17 @@
 
 # 3. Principais comandos
 
-1. `git add`: Adiciona modificações realizadas à área de stage;
-2. `git reset`: Remove modificações da área de stage;
-3. `git commit -m "{MENSAGEM}"`: Faz o commit das alterações na área de stage com a {MENSAGEM};
-4. `git commit -a -m "{MENSAGEM}"`: Faz o commit de TODAS as alterações com a {MENSAGEM}, **não recomendado** ;
-5. `git push`: Sobe alterações para o repositório remoto;
-6. `git pull`: Puxa alterações do repositório remoto para o repositório local.
+1. `git init`: Inicializa um repositório local;
+2. `git clone {REPOSITÓRIO}`: Clona um repositório remoto para sua máquina;
+3. `git status`: Status atual de modificações;
+4. `git diff {ARQUIVO}`: Mostra visualmente as modificações realizadas no ARQUIVO;
+5. `git add`: Adiciona modificações realizadas à área de stage;
+6. `git restore {ARQUIVO}`: Remove modificação da área de stage; 
+7. `git reset`: Remove modificações da área de stage;
+8. `git commit -m "{MENSAGEM}"`: Faz o commit das alterações na área de stage com a {MENSAGEM};
+9. `git commit -a -m "{MENSAGEM}"`: Faz o commit de TODAS as alterações com a {MENSAGEM}, **não recomendado** ;
+10. `git push`: Sobe alterações para o repositório remoto;
+11. `git pull`: Puxa alterações do repositório remoto para o repositório local.
 
 
 # 4. Arquivos auxiliares
