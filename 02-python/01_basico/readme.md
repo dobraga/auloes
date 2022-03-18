@@ -109,13 +109,13 @@ Como comentado anteriormente, o python possui uma escrita fácil, a sintaxe bás
 
 - Blocos
 
-  - if/elif/else
-  - for/else
-  - while/else
-  - def
-  - try/except /finally/else
-  - class
-  - with
+    - if/elif/else
+    - for/else
+    - while/else
+    - def
+    - try/except /finally/else
+    - class
+    - with
 
 
 
@@ -233,51 +233,66 @@ abs(-1)      # 1
     print("Olá mundo!" + str(3.14))
     ```
 
+- Formatar
+
+    Além de somar podemos formatar, exemplos:
+
+    ```python
+    idade = 25
+    print("Eu tenho {} anos".format(idade))
+    print("Eu tenho {0} anos ele tem {0} anos".format(idade))
+    print("Eu tenho {idade} anos".format(idade=idade))
+    print(f"Eu tenho {idade} anos")
+    ```
+
+- Tamanho da string
+    ```python
+    len("Olá mundo") #9
+    ```
+
+- Checar se contém
+    ```python
+    "Olá" in "Olá mundo" # True
+    "Ola" in "Olá mundo" # False
+    "olá" in "Olá mundo" # False
+    ```
+
 
 Alguns métodos que podemos utilizar:
 
-<table>
-<tbody>
-    <tr>
-        <th>método</th>
-        <th>descrição</th>
-    </tr>
-    <tr>
-        <td>len()</td>
-        <td>mostra o tamanho da string</td>
-    </tr>
-    <tr>
-        <td>lower()</td>
-        <td>caixa baixa</td>
-    </tr>
-    <tr>
-        <td>upper()</td>
-        <td>caixa alta</td>
-    </tr>
-    <tr>
-        <td>str()</td>
-        <td>converte em string</td>
-    </tr>
-    <tr>
-        <td>isalpha()</td>
-        <td>retorna False se a string contiver algum caracter que não seja letras</td>
-    </tr>
-    <tr>
-        <td>split()</td>
-        <td>separa em uma lista de strings</td>
-    </tr>
-</tbody>
-</table>
-
-Exemplo de utilização:
+Para vermos todos os métodos que podemos utilizar, podemos executar:
 
 ```python
-print("Olá mundo!".upper()) # "OLÁ MUNDO!"
+    dir("")
+# ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-```python
-print("Olá mundo!".split(" ")) # ['Olá', 'mundo!']
-```
+Todos os métodos que possuem __ são métodos especiais, ex:
+
+`__add__`: Método especial para soma de strings;  
+`__contains__`: Método especial para verificar se contem;  
+`__len__`: Método para utilizar a função `len`  
+
+
+- Exemplo de utilização de alguns métodos:
+
+    - capitalize
+        ```python
+        print("olá mundo".capitalize()) # Olá mundo
+        ````
+
+    - center
+        ```python
+        print("|" + "banana".center(20) + "|")
+        ```
+
+    - count
+        ```python
+        "banana".count("a") # 3
+        ```
+
+    Para ver os demais métodos utilizar a [documentação](https://docs.python.org/pt-br/3/library/stdtypes.html#string-methods.)
+
 
 - Podemos acessar letras por index, ex:
 
