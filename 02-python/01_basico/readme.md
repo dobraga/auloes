@@ -506,6 +506,12 @@ else:
     print(d["Ana"]) # 50
     ```
 
+    - Checar se a chave existe
+    ```python
+    "Ana" in d # False
+    "José" in d # True
+    ```
+
     - Chave e valor:
     ```python
     print(d.keys()) # dict_keys(['Ana', 'José', 'Laura'])
