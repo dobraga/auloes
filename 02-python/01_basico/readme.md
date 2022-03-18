@@ -515,4 +515,115 @@ else:
 
 ## 9. Loops
 
+Como vimos, as strings, listas, sets e tuplas conseguimos ver o tamanho do objeto utilizando a função `len` e também podemos acessar os elementos pela posição utilizando `[index]`, logo podemos realizar loop nesses objetos, exemplo:
+
+- For
+
+    ```python
+    for letra in "banana":
+        print(letra)
+    else:
+        print("Acabou!")
+
+    # b
+    # a
+    # n
+    # a
+    # n
+    # a
+    # Acabou!
+    ```
+
+    ```python
+    frutas = ["laranja", "maçã", "pera", "banana"]
+    for fruta in frutas:
+        print(fruta)
+
+    # laranja
+    # maçã
+    # pera
+    # banana
+    ```
+
+    - Podemos quebrar o loop utilizando `break`
+
+        ```python
+        for fruta in frutas:
+            print(fruta)
+            if fruta == "pera":
+                break
+        else:
+            print("Acabou!") # o break não permite entrar no else
+
+        # laranja
+        # maçã
+        # pera
+        ```
+
+    - Podemos pular um elemento
+        ```python
+        for fruta in frutas:
+            if fruta == "pera":
+                continue
+            print(fruta)
+        else:
+            print("Acabou!")
+
+        # laranja
+        # maçã
+        # banana
+        # Acabou!
+        ```
+
+
+    - Podemos contar os elementos
+        ```python
+        for i, frutas in enumerate(frutas):
+            print(i, frutas)
+
+        # 0 laranja
+        # 1 maçã
+        # 2 pera
+        # 3 banana
+        ```
+
+- While
+
+    ```python
+    count = 0
+    while count < 3:
+        print(f"Oi {count} vezes")
+        count += 1
+    else:
+        print("Acabou!")
+
+    # Oi 0 vezes
+    # Oi 1 vezes
+    # Oi 2 vezes
+    # Acabou!
+    ```
+
+
+Podemos utilizar a função `range` que tem a função de criar sequência de números:
+
+```python
+for n in range(6):
+  print(n)
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+```
+
+```python
+list(range(5, 10)) # [5, 6, 7, 8, 9]
+```
+
+```python
+list(range(0, 10, 4)) # [0, 4, 8]
+```
+
 ## 10. Funções
