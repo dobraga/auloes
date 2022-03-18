@@ -633,3 +633,89 @@ list(range(0, 10, 4)) # [0, 4, 8]
 ```
 
 ## 10. Funções
+
+
+```python
+def ola(nome):
+    print(f"Olá {nome}!")
+```
+
+```python
+type(ola)
+# <class 'function'>
+```
+
+```python
+ola("Douglas")
+# Olá Douglas!
+```
+
+```python
+ola(nome = "Douglas")
+# Olá Douglas!
+```
+
+
+- Quando não temos certeza da quantidade de parâmetros, podemos usar o `*`, ex:
+
+    ```python
+    def ola(*nomes):
+        print(f"Olá {nomes}")
+    ```
+
+    ```python
+    ola("Douglas", "Thalia")
+    # Olá ('Douglas', 'Thalia')
+    ```
+
+- Podemos usar `**` para parâmetros genéricos nomeados, ex:
+
+    ```python
+    def mostra(**params):
+        print(params.keys())
+        print(params.values())
+    ```
+
+    ```python
+    mostra(nome = "Douglas", ultimo_nome = "Braga")
+    # dict_keys(['nome', 'ultimo_nome'])
+    # dict_values(['Douglas', 'Braga'])
+    ```
+
+- Valores padrão
+
+    ```python
+    def funcao(pais="Brasil"):
+        print(f"Eu moro no {pais}")
+    ```
+
+    ```python
+    funcao() # Eu moro no Brasil
+    funcao("Canada") # Eu moro no Canada
+    ```
+
+- Retornar valores
+
+    ```python
+    def funcao():
+        return 30
+    ```
+
+    ```python
+    var = funcao()
+    print(var) # 30
+    ```
+
+- Função recursiva
+
+    ```python
+    def fatorial(n):
+        if n == 1:
+            return 1
+        else:
+            return (n * fatorial(n-1))
+    ```
+
+    ```python
+    fatorial(4) # 24
+    ```
