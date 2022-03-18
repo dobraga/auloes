@@ -1,3 +1,16 @@
+- [1. Porque python?](#1-porque-python)
+- [2. Utilização](#2-utilização)
+- [3. Sintaxe](#3-sintaxe)
+- [4. Tipo de variáveis](#4-tipo-de-variáveis)
+- [5. Operações matemáticas](#5-operações-matemáticas)
+- [6. Strings](#6-strings)
+- [7. Bool](#7-bool)
+- [8. Condicionais](#8-condicionais)
+- [9. Listas, tuplas, sets e dicionários](#9-listas-tuplas-sets-e-dicionários)
+- [10. Loops](#10-loops)
+- [11. Funções](#11-funções)
+
+
 ## 1. Porque python?
 
 [Anualmente o github realiza uma pesquisa](https://octoverse.github.com/#top-languages-over-the-years) e um dos motivos para aprender python é por ser uma das linguagens mais utilizadas.
@@ -301,7 +314,50 @@ Todos os métodos que possuem __ são métodos especiais, ex:
     "python"[0:3] # pyt
     ```
 
-## 7. Condicionais
+## 7. Bool
+
+Os valores booleanos são: `True` e `False`
+
+
+```python
+True == 1 # True
+True == 0 # False
+False == 1 # False
+False == 0 # True
+True + True # 2
+True and False # False
+True or False # True
+not True # False
+not False # True
+```
+
+
+```python
+1 != 0 # True
+1 == '1' # False
+1 == 0 # False
+1 == 1.0 # True
+
+10 > 10 # False
+10 >= 10 # True
+
+
+10 < 20 # True
+10 <= 10 # True
+
+1 < 2 < 3 # True
+```
+
+```python
+all([True, True, False]) # False
+all([True, True, True]) # True
+
+any([True, True, False]) # True
+``` 
+
+
+
+## 8. Condicionais
 
 A sintaxe básica de condicionais:
 
@@ -326,7 +382,7 @@ else:
 ```
 
 
-## 8. Listas, tuplas, sets e dicionários
+## 9. Listas, tuplas, sets e dicionários
 
 - Listas
 
@@ -519,7 +575,7 @@ else:
     ```
 
 
-## 9. Loops
+## 10. Loops
 
 Como vimos, as strings, listas, sets e tuplas conseguimos ver o tamanho do objeto utilizando a função `len` e também podemos acessar os elementos pela posição utilizando `[index]`, logo podemos realizar loop nesses objetos, exemplo:
 
@@ -632,7 +688,7 @@ list(range(5, 10)) # [5, 6, 7, 8, 9]
 list(range(0, 10, 4)) # [0, 4, 8]
 ```
 
-## 10. Funções
+## 11. Funções
 
 
 ```python
