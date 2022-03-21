@@ -9,6 +9,8 @@
 - [9. Listas, tuplas, sets e dicionários](#9-listas-tuplas-sets-e-dicionários)
 - [10. Loops](#10-loops)
 - [11. Funções](#11-funções)
+- [12. import](#12-import)
+- [13. Exemplo de projetos](#13-exemplo-de-projetos)
 
 
 ## 1. Porque python?
@@ -775,3 +777,58 @@ ola(nome = "Douglas")
     ```python
     fatorial(4) # 24
     ```
+
+
+## 12. import
+
+Uma ação importante para utilização do python é a importação de funções e
+classes de outros pacotes. O python já possui alguns módulos que são instalados
+juntamente com o python, como por exemplo, o módulo `random`. Para ver a lista
+completa de módulos acesse a [documentação](https://docs.python.org/pt-br/3/library/).
+
+
+Para importar módulos, podemos fazer de duas formas:
+
+
+- Importando o modulo completo
+```python
+import random
+print(random.random())
+```
+
+- Importando a função que irá utilizar
+```python
+from random import random
+print(random())
+```
+
+
+Podemos também separar nosso projeto em alguns arquivos para
+melhorar a organização do projeto, ex:
+
+
+```
+algumas_funcoes.py
+outras_funcoes.py
+main.py
+```
+
+Suponha que dentro dos arquivos `algumas_funcoes.py` e `outras_funcoes.py`
+tenhamos uma função com o mesmo nome do arquivo e que no arquivo `main.py`
+precisamos utilizar essas funções, então poderíamos fazer:
+
+```python
+from algumas_funcoes import algumas_funcoes
+from outras_funcoes import outras_funcoes
+
+print(algumas_funcoes())
+print(outras_funcoes())
+```
+
+
+## 13. Exemplo de projetos
+
+- Adivinhador de números
+- Pedra, papel e tesoura
+- Jogo da forca
+- Gerador de senhas
