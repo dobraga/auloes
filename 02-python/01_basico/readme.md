@@ -357,6 +357,9 @@ all([True, True, True]) # True
 any([True, True, False]) # True
 ``` 
 
+```python
+10 in [10, 20, 30] # True
+```
 
 
 ## 8. Condicionais
