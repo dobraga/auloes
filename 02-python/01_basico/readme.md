@@ -645,8 +645,8 @@ Como vimos, as strings, listas, sets e tuplas conseguimos ver o tamanho do objet
 
     - Podemos contar os elementos
         ```python
-        for i, frutas in enumerate(frutas):
-            print(i, frutas)
+        for i, fruta in enumerate(frutas):
+            print(i, fruta)
 
         # 0 laranja
         # 1 maçã
