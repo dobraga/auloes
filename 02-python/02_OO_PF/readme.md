@@ -89,8 +89,26 @@
         c.print_name() # toto
         ```
 
+    - Classe vs Instância
+
+        ```python
+        # Definindo uma classe
+        class Cachorro:
+            def __init__(self, nome):
+                self.__nome = nome
+
+            def print_name(self):
+                print(self.__nome)
+
+        # Criando uma instância da classe
+        cachorro = Cachorro()
+        ```
 
 ## 3. Dunder
+
+[Uma classe pode implementar certas operações que são invocadas por sintaxe especial (como operações aritméticas ou subscrito e fatiamento) definindo métodos com nomes especiais.](https://docs.python.org/pt-br/3/reference/datamodel.html#special-method-names)
+
+Exemplo de alguns desses métodos:
 
 - str
     ```python
@@ -187,8 +205,6 @@
     c = Cachorro()
     print(c()) # au au
     ```
-
-[Outros métodos especiais na documentação do python.](https://docs.python.org/pt-br/3/reference/datamodel.html#special-method-names)
 
 
 ## 4. Herança
