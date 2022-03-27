@@ -309,7 +309,7 @@ cachorro.comer()
 
 - map
 
-    ![](img/map.png)
+    ![](img/map.jpg)
 
     ```python
     map(<f>, <iterable>)
