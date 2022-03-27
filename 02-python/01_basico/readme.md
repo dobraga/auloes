@@ -10,7 +10,8 @@
 - [10. Loops](#10-loops)
 - [11. Funções](#11-funções)
 - [12. import](#12-import)
-- [13. Exemplo de projetos](#13-exemplo-de-projetos)
+- [13. Trabalhando com arquivos](#13-trabalhando-com-arquivos)
+- [14. Exemplo de projetos](#14-exemplo-de-projetos)
 
 
 ## 1. Porque python?
@@ -828,8 +829,64 @@ print(algumas_funcoes())
 print(outras_funcoes())
 ```
 
+## 13. Trabalhando com arquivos
 
-## 13. Exemplo de projetos
+- Escrita
+    ```python
+    file = open("teste.txt", mode="w") # abre conexão com arquivo
+
+    for i in range(50):
+        file.write(f"oi {i}\n")
+
+    file.close() # fecha conexão com arquivo
+    ```
+
+    - with
+
+        O `with` utiliza os métodos especiais `__enter__` e `__exit__`, ou seja, qualquer objeto que possuam esses métodos poderemos utilizar o `with`, ex de utilização:
+
+        ```python
+        for i in range(50):
+            with open(f"teste/teste_{i}.txt", mode="w") as file:
+                file.write(f"oi {i}")
+        ```
+
+
+- Leitura
+    ```python
+    with open("teste.txt", "r") as file:
+        data = file.read()
+
+    print(data)
+    ```
+
+- Trabalhando com diretórios
+    - Criando diretórios
+        ``` python
+        from os import makedirs
+
+        makedirs("teste")
+        ```
+
+    - Criando vários arquivos
+        ```python
+        for i in range(50):
+            with open(f"teste/teste_{}.txt", mode="w") as file:
+                file.write(f"oi {i}")
+        ```
+
+    - Listando arquivos:
+        ```python
+        from glob import glob
+
+        print(glob("teste/*"))
+
+        print(glob("**/img/*", recursive=True))
+
+        print(glob("**/img/*.png", recursive=True))
+        ```
+
+## 14. Exemplo de projetos
 
 - Adivinhador de números
 - Pedra, papel e tesoura
