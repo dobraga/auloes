@@ -241,5 +241,152 @@ cachorro.comer()
 
 ## 5. Programação Funcional
 
-## 6. Lambda Functions
+- Função como objeto e argumento de outra função
 
+    ```python
+
+    def funcao():
+        print("oi, eu sou uma função!")
+    ```
+
+    ```python
+    outra_funcao = funcao()
+    ```
+
+    ```python
+    def roda_funcao(funcao):
+        funcao()
+
+    roda_funcao(outra_funcao)
+    ```
+
+- Função que retorna uma função
+
+
+    ```python
+    def cria_funcao():
+        def funcao_interna():
+            print("Fui gerado dentro de uma função")
+
+        return funcao_interna
+    ```
+
+    ```python
+    f = cria_funcao()
+    f()
+    ```
+
+- Função com múltiplos retornos
+
+    ```python
+    def funcao(x):
+        return x, x ** 2, x ** 3
+
+    print(funcao(3))
+    ```
+
+- Função lambda
+
+    ```python
+    reverte = lambda x: x[::-1]
+    print(reverte("Olá mundo!"))
+    ```
+
+    ```python
+    media = lambda x1, x2, x3: (x1 + x2 + x3) / 3
+    print(media(10, 20, 30))
+    ```
+
+    ```python
+    funcao = lambda x: (x, x ** 2, x ** 3)
+    print(funcao(3))
+    ```
+
+### 5.1. map, filter e reduce
+
+![](img/1_rSeebWb5AllYnqdVzy2KEQ.jpeg)
+
+
+- map
+
+    ![](img/map.png)
+
+    ```python
+    map(<f>, <iterable>)
+    ```
+
+    ```python
+    print(map(funcao, [2, 3, 4]))
+    # <map object at 0x7f609dfcda30>
+    ```
+
+    ```python
+    iterator = map(funcao, [2, 3, 4])
+
+    for i in iterator:
+        print(i)
+
+    # (2, 4, 8)
+    # (3, 9, 27)
+    # (4, 16, 64)
+    ```
+
+    ```python
+    print(list(map(funcao, [2, 3, 4])))
+    # [(2, 4, 8), (3, 9, 27), (4, 16, 64)]
+    ```
+
+    - Múltiplos argumentos
+
+        ```python
+        def f(a, b, c):
+            return a + b + c
+        
+        print(list(map(f, [1, 2, 3], [10, 20, 30], [100, 200, 300])))
+
+        # [111, 222, 333]
+        ```
+
+- filter
+
+    ```python
+    def maior_que_100(x):
+        return x > 100
+    ```
+
+    ```python
+    print(list(filter(maior_que_100, [1, 111, 2, 222, 3, 333])))
+    ```
+
+
+    ```python
+    print(list(filter(lambda x: x > 100, [1, 111, 2, 222, 3, 333])))
+    ```
+
+- reduce
+
+    ![](img/1_cYZzHVWPO5pT6iMfcTHWXg.png)
+
+    ```python
+    def soma(x, y):
+        return x + y
+
+    from functools import reduce
+
+    print(reduce(soma, [1, 2, 3, 4, 5]))
+    ```
+
+    ![](img/t.5446e98a36c1.png)
+
+    ```python
+    print(sum([1, 2, 3, 4, 5]))
+    ```
+
+
+    ```python
+    print(reduce(soma, ["cat", "dog", "hedgehog", "gecko"]))
+    ```
+
+    ```python
+    print("".join(["cat", "dog", "hedgehog", "gecko"]))
+    ```
