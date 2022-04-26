@@ -7,3 +7,4 @@ Tópicos
 5. CI/CD
 6. SQL
 7. NoSQL
+8. Docker
